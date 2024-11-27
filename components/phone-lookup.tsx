@@ -44,7 +44,7 @@ export function PhoneLookup() {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://apilayer.net/api/validate?access_key=471eba72a86a6724f5101348d08c938f&number=${values.phoneNumber}&country_code=${values.countryCode}&format=1`
+        `https://apilayer.net/api/validate?access_key=471eba72a86a6724f5101348d08c938f&number=${values.phoneNumber}&country_code=${values.countryCode}&format=1`
       );
       const data = await response.json();
       setPhoneInfo(data);
